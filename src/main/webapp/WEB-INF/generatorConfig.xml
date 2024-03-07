@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="context1">
+        <jdbcConnection connectionURL="jdbc:mysql://127.0.0.1:3306/tms?useUnicode=true&amp;characterEncoding=utf-8" driverClass="com.mysql.jdbc.Driver" password="123456" userId="root" />
+
+        <javaModelGenerator targetPackage="com.cqupt.entity" targetProject="D:\\2022zcx毕业设计\\ssmTMS\\src\\main\\java" />
+        <sqlMapGenerator targetPackage="com.cqupt.mapping" targetProject="D:\\2022zcx毕业设计\\ssmTMS\\src\\main\\java" />
+        <javaClientGenerator targetPackage="com.cqupt.dao.oracle" targetProject="D:\\2022zcx毕业设计\\ssmTMS\\src\\main\\java" type="XMLMAPPER" />
+        <table tableName="supplier_store">
+            <generatedKey column="ss_id" sqlStatement="Mysql" identity="true"/>
+        </table>
+<!--        <table tableName="transport_plan">-->
+<!--            <generatedKey column="tp_id" sqlStatement="Mysql" identity="true"/>-->
+<!--        </table>-->
+    </context>
+</generatorConfiguration>
